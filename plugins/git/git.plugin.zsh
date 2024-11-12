@@ -160,6 +160,7 @@ alias gcb='git checkout -b'
 alias gcB='git checkout -B'
 alias gcd='git checkout $(git_develop_branch)'
 alias gcm='git checkout $(git_main_branch)'
+alias gcmm='git checkout $(git_main_branch) --merge'
 alias gcp='git cherry-pick'
 alias gcpa='git cherry-pick --abort'
 alias gcpc='git cherry-pick --continue'
@@ -275,6 +276,7 @@ function ggu() {
 compdef _git ggu=git-checkout
 
 alias gprom='git pull --rebase origin $(git_main_branch)'
+alias gproma='git pull --rebase origin $(git_main_branch) --autostash'
 alias gpromi='git pull --rebase=interactive origin $(git_main_branch)'
 alias gprum='git pull --rebase upstream $(git_main_branch)'
 alias gprumi='git pull --rebase=interactive upstream $(git_main_branch)'

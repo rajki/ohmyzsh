@@ -54,6 +54,7 @@ plugins=(... git)
 | `gcB`                  | `git checkout -B`                                                                                                               |
 | `gcd`                  | `git checkout $(git_develop_branch)`                                                                                            |
 | `gcm`                  | `git checkout $(git_main_branch)`                                                                                               |
+| `gcmm`                 | `git checkout $(git_main_branch) --merge`                                                                                       |
 | `gcp`                  | `git cherry-pick`                                                                                                               |
 | `gcpa`                 | `git cherry-pick --abort`                                                                                                       |
 | `gcpc`                 | `git cherry-pick --continue`                                                                                                    |
@@ -126,6 +127,7 @@ plugins=(... git)
 | `gpra`                 | `git pull --rebase --autostash`                                                                                                 |
 | `gprav`                | `git pull --rebase --autostash -v`                                                                                              |
 | `gprom`                | `git pull --rebase origin $(git_main_branch)`                                                                                   |
+| `gproma`               | `git pull --rebase origin $(git_main_branch) --autostash`                                                                       |
 | `gpromi`               | `git pull --rebase=interactive origin $(git_main_branch)`                                                                       |
 | `gprum`                | `git pull --rebase upstream $(git_main_branch)`                                                                                 |
 | `gprumi`               | `git pull --rebase=interactive upstream $(git_main_branch)`                                                                     |
